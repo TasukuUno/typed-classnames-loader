@@ -1,6 +1,6 @@
 {
   "name": "typed-classnames-loader",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Webpack loader for classnames auto bind and d.ts auto generation",
   "main": "index.js",
   "scripts": {
