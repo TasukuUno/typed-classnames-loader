@@ -11,7 +11,7 @@ declare namespace ClassNames {
 	type Dictionary = {
 		[id: string]: DictionaryValue;
 	}
-	type Value = string | Dictionary | Values;
+	type Value = string | Dictionary | Values | null | undefined;
 	interface Values extends Array<Value> {}
 	type Fn = (...classes: Value[]) => string;
 }
@@ -22,7 +22,7 @@ declare namespace ClassNamesBind {
 	type Dictionary = {
 		[key in Names]?: DictionaryValue;
 	}
-	type Value = Names | Dictionary | Values;
+	type Value = Names | Dictionary | Values | null | undefined;
 	interface Values extends Array<Value> {}
 	type Fn = (...classes: Value[]) => string;
 }
