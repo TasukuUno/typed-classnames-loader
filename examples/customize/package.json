@@ -1,0 +1,22 @@
+{
+  "name": "customize",
+  "version": "1.0.0",
+  "description": "This example explains how can you customize by configurations",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p src/tsconfig.json && webpack"
+  },
+  "author": "TasukuUno",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.5"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.20.3",
+    "typescript": "^2.8.1",
+    "typed-classnames-loader": "../../",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14"
+  }
+}

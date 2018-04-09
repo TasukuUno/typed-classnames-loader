@@ -1,0 +1,25 @@
+.button {
+	-webkit-appearance: none;
+	background: #777;
+	border: none;
+	border-radius: 20px;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 18px;
+	height: 40px;
+	line-height: 40px;
+	outline: none;
+	padding: 0 32px;
+	text-align: center;
+}
+
+.button--primary {
+	background: #4dac26;
+}
+
+.button:disabled {
+	cursor: default;
+	opacity: 0.5;
+}
