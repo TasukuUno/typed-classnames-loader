@@ -1,6 +1,6 @@
 {
   "name": "typed-classnames-loader",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Webpack loader for classnames auto bind and d.ts auto generation",
   "main": "index.js",
   "scripts": {
@@ -8,10 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TasukuUno/typed-classnames-loader.git"
+    "url": "git+https://github.com/TasukuUno/typed-classnames-loader.git"
   },
   "keywords": [
-    "css-modules", "typescript", "classnames"
+    "css-modules",
+    "typescript",
+    "classnames"
   ],
   "author": "TasukuUno",
   "license": "MIT",
@@ -29,5 +31,13 @@
   "peerDependencies": {
     "classnames": ">=2.2.0",
     "css-loader": ">=0.26.0"
+  },
+  "bugs": {
+    "url": "https://github.com/TasukuUno/typed-classnames-loader/issues"
+  },
+  "homepage": "https://github.com/TasukuUno/typed-classnames-loader#readme",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
   }
 }
