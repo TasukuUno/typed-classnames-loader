@@ -40,14 +40,14 @@ At the same time, `typed-classnames-loader` will generate `d.ts` file like:
 
 ```ts
 // style.css.d.ts
-type Style = {
+interface Style {
   button: string;
   primary: string;
 }
 
 declare namespace ClassNames {
   type DictionaryValue = boolean | undefined | null;
-  type Dictionary = {
+  interface Dictionary {
     [id: string]: DictionaryValue;
   }
   type Value = string | Dictionary | Values | null | undefined;
@@ -60,7 +60,7 @@ declare namespace ClassNamesBind {
   type DictionaryValue = boolean | undefined | null;
   type Dictionary = {
     [key in Names]?: DictionaryValue;
-  }
+  };
   type Value = Names | Dictionary | Values | null | undefined;
   interface Values extends Array<Value> {}
   type Fn = (...classes: Value[]) => string;
@@ -159,6 +159,6 @@ So, an excerpt from webpack.config may be like this:
 }
 ```
 
-## Contrinting
+## Contributing
 
 The author is new to publish npm. Please feel free to make PRs or issues! Thank you for your help! 😄
