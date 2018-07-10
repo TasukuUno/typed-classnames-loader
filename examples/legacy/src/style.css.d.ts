@@ -1,11 +1,11 @@
-type Style = {
+interface Style {
   button: string;
   'button--primary': string;
 }
 
 declare namespace ClassNames {
   type DictionaryValue = boolean | undefined | null;
-  type Dictionary = {
+  interface Dictionary {
     [id: string]: DictionaryValue;
   }
   type Value = string | Dictionary | Values | null | undefined;
@@ -18,7 +18,7 @@ declare namespace ClassNamesBind {
   type DictionaryValue = boolean | undefined | null;
   type Dictionary = {
     [key in Names]?: DictionaryValue;
-  }
+  };
   type Value = Names | Dictionary | Values | null | undefined;
   interface Values extends Array<Value> {}
   type Fn = (...classes: Value[]) => string;
