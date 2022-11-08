@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "ast-query": "2.0.x",
-    "loader-utils": "1.1.x"
+    "loader-utils": "1.4.x"
   },
   "devDependencies": {
     "eslint": "4.x",
